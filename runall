@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /docs
+pip install -r docs_requirements.txt
+make server

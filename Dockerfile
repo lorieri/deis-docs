@@ -6,8 +6,8 @@ RUN easy_install --upgrade pip
 
 RUN pip install -r docs_requirements.txt
 
-ADD docs_requirements.txt /
+ADD . /
 
 WORKDIR /docs
 
-CMD ["make","server"]
+CMD ["/runall"]
