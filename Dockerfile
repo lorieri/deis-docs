@@ -4,9 +4,9 @@ RUN apt-get update && apt-get install --yes python python-pip postgresql-9.3 mak
 
 RUN easy_install --upgrade pip
 
-RUN pip install -r docs_requirements.txt
-
 ADD ./ /
+
+RUN pip install -r /docs_requirements.txt
 
 WORKDIR /deis/docs
 
