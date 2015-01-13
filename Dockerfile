@@ -6,8 +6,8 @@ RUN easy_install --upgrade pip
 
 RUN pip install -r docs_requirements.txt
 
-ADD . /
+ADD ./ /
 
-WORKDIR /docs
+WORKDIR /deis/docs
 
 CMD ["/runall"]
